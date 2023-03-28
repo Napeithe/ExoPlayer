@@ -772,6 +772,11 @@ public final class CastPlayer extends BasePlayer {
   @Override
   public void setDeviceMuted(boolean muted) {}
 
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+
+  }
+
   // Internal methods.
 
   // Call deprecated callbacks.

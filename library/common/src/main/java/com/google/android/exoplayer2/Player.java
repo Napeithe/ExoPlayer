@@ -2517,4 +2517,6 @@ public interface Player {
 
   /** Sets the mute state of the device. */
   void setDeviceMuted(boolean muted);
+
+  void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread);
 }

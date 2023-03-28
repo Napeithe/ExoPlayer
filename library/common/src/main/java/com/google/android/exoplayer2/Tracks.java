@@ -269,6 +269,10 @@ public final class Tracks implements Bundleable {
     }
   }
 
+  public List<Group> getGroupSimpleList(){
+    return this.getGroups();
+  }
+
   /** Empty tracks. */
   public static final Tracks EMPTY = new Tracks(ImmutableList.of());
 
@@ -281,6 +285,7 @@ public final class Tracks implements Bundleable {
    */
   public Tracks(List<Group> groups) {
     this.groups = ImmutableList.copyOf(groups);
+
   }
 
   /** Returns the {@link Group groups} of tracks. */

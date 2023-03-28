@@ -1677,7 +1677,8 @@ import java.util.concurrent.TimeoutException;
     return false;
   }
 
-  /* package */ void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
     this.throwsWhenUsingWrongThread = throwsWhenUsingWrongThread;
   }
 

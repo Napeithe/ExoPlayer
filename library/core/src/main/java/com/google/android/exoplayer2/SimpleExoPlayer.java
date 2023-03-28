@@ -1293,7 +1293,8 @@ public class SimpleExoPlayer extends BasePlayer
     return player.isTunnelingEnabled();
   }
 
-  /* package */ void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
     blockUntilConstructorFinished();
     player.setThrowsWhenUsingWrongThread(throwsWhenUsingWrongThread);
   }

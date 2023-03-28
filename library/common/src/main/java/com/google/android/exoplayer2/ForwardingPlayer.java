@@ -870,6 +870,11 @@ public class ForwardingPlayer implements Player {
     player.setDeviceMuted(muted);
   }
 
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+    player.setThrowsWhenUsingWrongThread(throwsWhenUsingWrongThread);
+  }
+
   /** Returns the {@link Player} to which operations are forwarded. */
   public Player getWrappedPlayer() {
     return player;

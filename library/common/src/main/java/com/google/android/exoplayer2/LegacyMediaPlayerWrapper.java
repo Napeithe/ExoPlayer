@@ -56,4 +56,9 @@ public final class LegacyMediaPlayerWrapper extends SimpleBasePlayer {
     }
     return Futures.immediateVoidFuture();
   }
+
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+   // Do nothing
+  }
 }

@@ -394,4 +394,9 @@ public class StubPlayer extends BasePlayer {
   public void setDeviceMuted(boolean muted) {
     throw new UnsupportedOperationException();
   }
+
+  @Override
+  public void setThrowsWhenUsingWrongThread(boolean throwsWhenUsingWrongThread) {
+
+  }
 }
